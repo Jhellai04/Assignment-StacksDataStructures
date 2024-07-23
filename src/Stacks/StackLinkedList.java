@@ -14,7 +14,7 @@ public class StackLinkedList {
 
     public StackLinkedList() {
         this.top = null;
-        System.out.println("The stack is created");
+        System.out.println("Stack is created");
     }
 
     // Check if the stack is empty
@@ -39,7 +39,7 @@ public class StackLinkedList {
     // Implement pop method
     public void pop() {
         if (isEmpty()) {
-            System.out.println("The stack is empty");
+            System.out.println("Stack is empty");
             return; // indicating stack is empty
         }
         System.out.println("The value of " + top.data + " was removed");
@@ -49,7 +49,7 @@ public class StackLinkedList {
     // Implement peek method
     public void peek() {
         if (isEmpty()) {
-            System.out.println("The stack is empty");
+            System.out.println("Stack is empty");
             return; // indicating stack is empty
         }
         System.out.println("The value of " + top.data + " is at the top of the stack");
@@ -58,11 +58,11 @@ public class StackLinkedList {
     // Implement clearStack method
     public void clearStack() {
         top = null;
-        System.out.println("The stack has been cleared");
+        System.out.println("Stack has been cleared");
     }
 
     // Use the stack data structure to check whether a word is a palindrome or not
-    public static boolean isPalindrome(String word) {
+    public static boolean PalindromeTester(String word) {
         StackLinkedList stack = new StackLinkedList();
         for (char c : word.toCharArray()) {
             stack.push(c);
@@ -89,7 +89,7 @@ public class StackLinkedList {
         stackLinkedList.isEmpty();
 
         // Test palindrome
-        System.out.println("level is a palindrome: " + isPalindrome("level")); // Expected: true
-        System.out.println("car is a palindrome: " + isPalindrome("car")); // Expected: false
+        System.out.println("level is a palindrome: " + PalindromeTester("level")); // Expected: true
+        System.out.println("car is a palindrome: " + PalindromeTester("car")); // Expected: false
     }
 }
