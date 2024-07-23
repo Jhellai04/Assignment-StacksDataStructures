@@ -88,7 +88,7 @@ public class StackLinkedList {
         stackLinkedList.clearStack();
         stackLinkedList.isEmpty();
 
-        // Test palindrome
+        // Test if word is palindrome
         System.out.println("level is a palindrome: " + PalindromeTester("level")); // Expected: true
         System.out.println("car is a palindrome: " + PalindromeTester("car")); // Expected: false
     }
